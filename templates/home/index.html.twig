@@ -3,31 +3,17 @@
 {% block title %}Gite Progica{% endblock %}
 
 {% block body %}
-  <section class="row mt-3 title">
-    <h1>Bienvenu chez PROGICA</h1>
-    <article class="row mt-3">
-      <div class="col-1"></div>
-      <div class="col-10">
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis modi quis quisquam ex placeat atque odio eum assumenda. Ducimus eveniet pariatur voluptate vel, accusantium exercitationem qui iure reprehenderit? Officiis ipsam voluptas neque soluta earum modi accusantium, iure beatae, eius consequatur est itaque tenetur, iste animi molestias omnis eaque vero repellendus facilis voluptates veritatis culpa atque numquam fugiat. Odio dicta dignissimos numquam excepturi quis soluta hic quia enim, ea doloribus nisi quod beatae asperiores nesciunt illo sint at itaque aperiam architecto, consectetur molestiae sequi ex? Repellat et alias sunt necessitatibus autem soluta voluptatibus animi? Voluptatum architecto commodi necessitatibus dolorum porro. Dicta dolorem aut porro neque voluptates, nemo commodi, quidem, quasi eos nobis magni iste dolor facilis culpa deleniti voluptate laudantium veritatis expedita adipisci minima perspiciatis esse! Exercitationem doloribus, cupiditate corrupti accusamus ullam tenetur, neque facilis doloremque laboriosam possimus ducimus, praesentium qui suscipit! Sequi, corrupti. Dolorem, ratione sit, quae, officiis tenetur sunt nam sapiente est similique tempore placeat eius distinctio qui. Ea atque velit iusto debitis earum quos obcaecati provident eum. Facere maiores dicta laudantium, a nisi, laborum assumenda fugit mollitia, eius quod repellendus. Fuga unde impedit, sunt libero quaerat nulla. Molestias rerum ipsa dolorem doloribus, a reprehenderit praesentium voluptates iusto ab pariatur delectus nostrum aperiam omnis porro iure ad suscipit architecto magnam velit? Totam porro voluptate odio laboriosam a. Possimus minima nesciunt soluta tempore consequatur commodi repellendus nisi similique, fugit ut velit incidunt molestiae temporibus dignissimos facilis. Debitis nobis ipsam, porro ut veritatis libero ipsum labore ex. Odit nobis accusamus corrupti enim illo ipsum ut, earum laboriosam reiciendis! Magni quisquam adipisci veritatis impedit nihil perspiciatis id incidunt a cumque asperiores atque quia, consequatur mollitia nesciunt nobis temporibus expedita minima rem sequi non aspernatur iusto. Corporis nihil odit expedita, doloremque suscipit placeat iusto numquam, nobis natus vero dicta. Dignissimos et delectus sapiente.
-        </p>
-      </div>
-      <div class="col-1"></div>
-    </article>
-
-  </section>
-  <div class="img d-flex justify-content-center">
-    <img src="images/illustration/PROGICA.png" alt="">
+ 
+  <div class="img d-flex justify-content-center" style>
+    <img src="images/illustration/vacances.jpg" style="width:100%;" alt="">
   </div>
   <section class="row mt-5">
     {% for gite in gites %}
       <div class="col-md-4 mt-3">
-        <div class="card" style="width: 18rem;">
+        <div class="card">
           {% if gite.fileName %}
             <img src="{{gite.fileName}}" class="card-img-top" alt="...">
-            {# code de production #}
-            {# <img src="{{vich_uploader_asset(gite,'imageFile')}}" class="card-img-top" alt="..."> #}
-          {% endif %}
+           {% endif %}
           <div class="card-body">
             <h5 class="card-title">{{ gite.name }}</h5>
             <p class="card-text">{{ gite.address }}</p>
